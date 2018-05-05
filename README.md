@@ -6,3 +6,5 @@
 * [颜色错位](./glsl/colordrift.glsl)
 * [位置错误，抖动](./glsl/posshake.glsl)
 * [矩阵变换](./glsl/matrix.glsl)
+* [Gramma 校正](./glsl/gramma.glsl)
+* [对比度](./glsl/contrast.glsl)
