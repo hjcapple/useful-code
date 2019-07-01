@@ -23,6 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EEF4E0322C9A744004EFFB4 /* FlatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatMap.h; sourceTree = "<group>"; };
+		2EEF4E0622C9AC9B004EFFB4 /* intrusive_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intrusive_ptr.h; sourceTree = "<group>"; };
+		2EEF4E0722C9AD2E004EFFB4 /* noncopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noncopyable.h; sourceTree = "<group>"; };
+		2EEF4E0922C9AD9D004EFFB4 /* Ref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ref.h; sourceTree = "<group>"; };
+		2EEF4E0B22C9B871004EFFB4 /* list_head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list_head.h; sourceTree = "<group>"; };
 		2EEFEC8F22C6F5340091429D /* CppTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEFEC9A22C6F5B60091429D /* ScopeGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScopeGuard.h; sourceTree = "<group>"; };
 		2EEFEC9B22C6F5B60091429D /* CFScopeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScopeRelease.h; sourceTree = "<group>"; };
@@ -61,9 +66,14 @@
 		2EEFEC9922C6F5B60091429D /* cpp */ = {
 			isa = PBXGroup;
 			children = (
+				2EEF4E0B22C9B871004EFFB4 /* list_head.h */,
+				2EEF4E0922C9AD9D004EFFB4 /* Ref.h */,
+				2EEF4E0722C9AD2E004EFFB4 /* noncopyable.h */,
+				2EEF4E0622C9AC9B004EFFB4 /* intrusive_ptr.h */,
 				2EEFEC9E22C6F7D20091429D /* CloverTest.h */,
 				2EEFEC9A22C6F5B60091429D /* ScopeGuard.h */,
 				2EEFEC9B22C6F5B60091429D /* CFScopeRelease.h */,
+				2EEF4E0322C9A744004EFFB4 /* FlatMap.h */,
 			);
 			name = cpp;
 			path = ../../cpp;
@@ -246,7 +256,9 @@
 		2EEFEC9722C6F5340091429D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -254,7 +266,9 @@
 		2EEFEC9822C6F5340091429D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

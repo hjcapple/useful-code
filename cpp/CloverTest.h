@@ -3,30 +3,23 @@
 
 #include <cassert>
 
-namespace clover
-{
-    namespace test
-    {
-        inline void ensure(bool cond)
-        {
+namespace clover {
+    namespace test {
+        inline void ensure(bool cond) {
             assert(cond);
-            if (!cond)
-            {
+            if (!cond) {
                 throw "fail";
             }
         }
 
         template <typename T>
-        class TestCase
-        {
+        class TestCase {
         public:
-            TestCase()
-            {
+            TestCase() {
                 run();
             }
 
-            void ensure(bool cond)
-            {
+            void ensure(bool cond) {
                 clover::test::ensure(cond);
             }
             void run();
@@ -36,8 +29,7 @@ namespace clover
 #define __CLOVER_TEST_CONCATENATE(s1, s2) __CLOVER_TEST_CONCATENATE_IMPL(s1, s2)
 
 #define __CLOVER_TEST(ClassName)                                                       \
-    namespace                                                                          \
-    {                                                                                  \
+    namespace {                                                                        \
         struct ClassName;                                                              \
     }                                                                                  \
     static clover::test::TestCase<ClassName> __CLOVER_TEST_CONCATENATE(s_, ClassName); \
@@ -45,7 +37,7 @@ namespace clover
     void clover::test::TestCase<ClassName>::run()
 
 #define CLOVER_TEST __CLOVER_TEST(__CLOVER_TEST_CONCATENATE(CLOVER_TEST_NAME, __LINE__))
-    }
-}
+    } // namespace test
+} // namespace clover
 
 #endif
