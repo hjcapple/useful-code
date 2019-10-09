@@ -33,6 +33,7 @@
 		2EEFEC9B22C6F5B60091429D /* CFScopeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScopeRelease.h; sourceTree = "<group>"; };
 		2EEFEC9C22C6F5F60091429D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2EEFEC9E22C6F7D20091429D /* CloverTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloverTest.h; sourceTree = "<group>"; };
+		2EF0E6BF234D86C700BD3E92 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		2EEFEC9922C6F5B60091429D /* cpp */ = {
 			isa = PBXGroup;
 			children = (
+				2EF0E6BF234D86C700BD3E92 /* metamacros.h */,
 				2EEF4E0B22C9B871004EFFB4 /* list_head.h */,
 				2EEF4E0922C9AD9D004EFFB4 /* Ref.h */,
 				2EEF4E0722C9AD2E004EFFB4 /* noncopyable.h */,
@@ -105,7 +107,7 @@
 		2EEFEC8722C6F5340091429D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = HJC;
 				TargetAttributes = {
 					2EEFEC8E22C6F5340091429D = {
@@ -119,6 +121,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2EEFEC8622C6F5340091429D;
 			productRefGroup = 2EEFEC9022C6F5340091429D /* Products */;
@@ -257,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -267,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";

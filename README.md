@@ -7,6 +7,7 @@
 * [intrusive_ptr](./cpp/intrusive_ptr.h)
 * [noncopyable](./cpp/noncopyable.h)
 * [list_head](./cpp/list_head.h)
+* [metamacros](./cpp/metamacros.h)
 
 ## OpenGL Shader
 

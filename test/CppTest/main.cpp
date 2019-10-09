@@ -4,6 +4,7 @@
 #include "ScopeGuard.h"
 #include "FlatMap.h"
 #include "intrusive_ptr.h"
+#include "metamacros.h"
 
 CLOVER_TEST {
     void *p = nullptr;
